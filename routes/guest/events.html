@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvenTicket</title>
+
+    <!-- Bootstrap for the CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Flatly theme -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">EvenTicket</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Eventos <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="events.html">Culturales</a></li>
+                <li><a href="events.html">Deportivos</a></li>
+                <li><a href="events.html">Musicales</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar un evento">
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li class="separator"></li>
+            <li><a href="register.html">Registrarse</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-xs-12">
+        <h2 class="text-center">Buscar un evento</h2>
+        <input id="search_event" name="search_event" type="text" class="form-control text-center" placeholder="Ingresa palabras claves del evento aquí">
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="col-xs-12 col-sm-3">
+        <h2 class="text-center">Proximos eventos</h2>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#all" data-toggle="tab">Todos</a></li>
+          <li><a data-toggle="tab" href="#mty">Monterrey</a></li>
+          <li><a data-toggle="tab" href="#gdl">Guadalajara</a></li>
+          <li><a data-toggle="tab" href="#cdmx">Ciudad de México</a></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-9">
+        <div class="tab-content">
+          <div id="all" class="tab-pane active fade in">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#all-all">Todos</a></li>
+              <li><a data-toggle="tab" href="#all-culturales">Culturales</a></li>
+              <li><a data-toggle="tab" href="#all-deportivos">Deportivos</a></li>
+              <li><a data-toggle="tab" href="#all-musicales">Musicales</a></li>
+            </ul>
+            <div class="tab-content">
+              <div id="all-all" class="tab-pane active fade in">
+                <!--Event1 @foreach-->
+                <div class="event well">
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="../../img/santa-lucia.jpg" width="150" height="150">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Festival Internacional de Santa Lucia</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium esse, officiis deleniti sit iusto incidunt sunt officia facilis, odit natus temporibus quibusdam? Iusto iure blanditiis, quidem vero esse tempore obcaecati.</p>
+                      <span><i class="fa fa-calendar"></i> 28 Septiembre 2017 |</span>
+                      <span><i class="fa fa-map-marker"></i> Paseo Santa Lucia</span>
+                      <p class="pull-right"><button onclick="reservation()" class="btn btn-primary">Reservar entradas</button></p>
+                    </div>
+                  </div>
+                </div>
+                <!--Event2-->
+                <div class="event well">
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="../../img/tigres.jpg" width="150" height="150">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Tigres vs Necaxa</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium esse, officiis deleniti sit iusto incidunt sunt officia facilis, odit natus temporibus quibusdam? Iusto iure blanditiis, quidem vero esse tempore obcaecati.</p>
+                      <span><i class="fa fa-calendar"></i> 30 Septiembre 2017 |</span>
+                      <span><i class="fa fa-map-marker"></i> Estadio Universitario</span>
+                      <p class="pull-right"><button onclick="reservation()" class="btn btn-primary">Reservar entradas</button></p>
+                    </div>
+                  </div>
+                </div>
+                <!--Event3-->
+                <div class="event well">
+                  <div class="media">
+                    <a class="pull-left" href="#">
+                      <img class="media-object" src="../../img/northside.jpg" width="150" height="150">
+                    </a>
+                    <div class="media-body">
+                      <h4 class="media-heading">Northside Festival</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium esse, officiis deleniti sit iusto incidunt sunt officia facilis, odit natus temporibus quibusdam? Iusto iure blanditiis, quidem vero esse tempore obcaecati.</p>
+                      <span><i class="fa fa-calendar"></i> 28 Octubre 2017 |</span>
+                      <span><i class="fa fa-map-marker"></i> Parque Fundidora</span>
+                      <p class="pull-right"><button onclick="reservation()" class="btn btn-primary">Reservar entradas</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="all-culturales" class="tab-pane fade"></div>
+              <div id="all-deportivos" class="tab-pane fade"></div>
+              <div id="all-musicales" class="tab-pane fade"></div>
+            </div>
+          </div>
+          <div id="mty" class="tab-pane fade">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#">Todos</a></li>
+              <li><a data-toggle="tab" href="#">Culturales</a></li>
+              <li><a data-toggle="tab" href="#">Deportivos</a></li>
+              <li><a data-toggle="tab" href="#">Musicales</a></li>
+            </ul>
+          </div>
+          <div id="gdl" class="tab-pane fade">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#">Todos</a></li>
+              <li><a data-toggle="tab" href="#">Culturales</a></li>
+              <li><a data-toggle="tab" href="#">Deportivos</a></li>
+              <li><a data-toggle="tab" href="#">Musicales</a></li>
+            </ul>
+          </div>
+          <div id="cdmx" class="tab-pane fade">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#">Todos</a></li>
+              <li><a data-toggle="tab" href="#">Culturales</a></li>
+              <li><a data-toggle="tab" href="#">Deportivos</a></li>
+              <li><a data-toggle="tab" href="#">Musicales</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="col-xs-12">
+        <p>EvenTicket&copy; 2017. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script>
+      function reservation() {
+        window.location.replace('login.html');
+      }
+    </script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvenTicket</title>
+
+    <!-- Bootstrap for the CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Flatly theme -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">EvenTicket</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Eventos <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="events.html">Culturales</a></li>
+                <li><a href="events.html">Deportivos</a></li>
+                <li><a href="events.html">Musicales</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar un evento">
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li class="separator"></li>
+            <li class="active"><a href="register.html">Registrarse</a></li>
+            <li><a href="login.html">Iniciar sesión</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <h2>Formulario de registro</h2>
+                <div class="panel-body">
+                    <form class="form-horizontal" method="POST">
+
+                        <div class="form-group">
+                            <label for="first_name" class="col-md-4 control-label">Nombre</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="first_name" type="text" class="form-control" name="first_name" value="" required autofocus placeholder="Tu(s) nombre(s)">
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name" class="col-md-4 control-label">Apellidos</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="last_name" type="text" class="form-control" name="last_name" value="" required autofocus placeholder="Tu(s) apellido(s)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="col-md-4 control-label">Correo electronico</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                                    <input id="email" type="email" class="form-control" name="email" value="" required placeholder="Tu email (ejemplo@mail.com)">
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Contraseña</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                                    <input id="password" type="password" class="form-control" name="password" required placeholder="Tu contraseña">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirmar contraseña</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-unlock-alt"></i></span>
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Confirma tu contraseña">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="col-md-4 control-label">Telefono</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    <input id="phone" type="tel" class="form-control" name="phone" required placeholder="Tu telefono">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birthday" class="col-md-4 control-label">Fecha de nacimiento</label>
+
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    <input id="birthday" type="date" class="form-control" name="birthday" required>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Registrarse
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer>
+      <div class="col-xs-12">
+        <p>EvenTicket&copy; 2017. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

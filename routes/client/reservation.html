@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvenTicket</title>
+
+    <!-- Bootstrap for the CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Flatly theme -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">EvenTicket</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Eventos <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="events.html">Culturales</a></li>
+                <li><a href="events.html">Deportivos</a></li>
+                <li><a href="events.html">Musicales</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contacto</a></li>
+            <li>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Buscar un evento">
+                </div>
+                <button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li class="separator"></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nombre de Usuario <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="profile.html"><i class="fa fa-user"></i> Perfil</a></li>
+                <li><a href="history.html"><i class="fa fa-list"></i> Historial</a></li>
+                <li><a href="configuration.html"><i class="fa fa-cogs"></i> Configuracion</a></li>
+                <li><a href="help.html"><i class="fa fa-info-circle"></i> Ayuda</a></li>
+                <li><a href="../guest/index.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+    	<h3>Tigres vs Necaxa</h3>
+    	<div class="col-xs-12 col-md-6">
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea provident enim rem non magni veritatis debitis reprehenderit inventore assumenda nemo eum repellendus, unde, aliquid quia, hic doloremque eveniet sunt distinctio!</p>
+
+    		<p><strong><i class="fa fa-calendar"></i> Fecha:</strong> 28/Septiembre/2017</p>
+    		<p><strong><i class="fa fa-clock-o"></i> Hora:</strong> 19:00</p>
+    		<p><strong><i class="fa fa-map-marker"></i> Lugar:</strong> Estadio Universitario</p>
+    		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.453130361679!2d-100.31421118542372!3d25.72252461649982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86629453362b628f%3A0x4758ce0b56be25e7!2sEstadio+Universitario+de+la+Universidad+Aut%C3%B3noma+de+Nuevo+Le%C3%B3n!5e0!3m2!1ses-419!2smx!4v1506636680587" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    	</div>
+    	<div class="col-xs-12 col-md-6">
+    		<img class="img-responsive" src="../../img/universitario.jpg">
+
+    		<div class="row">
+    			<div class="col-xs-5">
+    				<h5>Zona</h5>
+    				<select name="zone" id="zone" class="form-control">
+						<option value="0">Butaca Norte</option>
+						<option value="1">Butaca Sur</option>
+						<option value="2">Preferente Norte</option>
+						<option value="3">Preferente Sur</option>
+						<option value="4">Zona de Gol Norte 6A</option>
+						<option value="5">Zona de Gol Norte 5A</option>
+						<option value="5">Zona de Gol Sur 10</option>
+						<option value="5">Zona de Gol Sur 12</option>
+					</select>
+    			</div>
+    			<div class="col-xs-2">
+    				<h5>Cantidad</h5>
+					<input type="number" value="1" min="1" class="form-control text-center">
+    			</div>
+    			<div class="col-xs-3">
+    				<h5>Precio</h5>
+    				<p class="price"><strong>$ 1200.00</strong></p>
+    			</div>
+    			<div class="col-xs-2">
+    				<h5 class="text-center">-</h5>
+    				<button class="btn btn-primary">Reservar</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <footer>
+      <div class="col-xs-12">
+        <p>EvenTicket&copy; 2017. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
