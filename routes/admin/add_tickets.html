@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvenTicket</title>
+
+    <!-- Bootstrap for the CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Flatly theme -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Left Sidebar -->
+    <link rel="stylesheet" href="../../css/profile.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html">EvenTicket</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="separator"></li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrador <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i> Escritorio</a></li>
+                <li><a href="help.html"><i class="fa fa-info-circle"></i> Ayuda</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row profile">
+            <div class="col-md-3">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                        <ul class="nav">
+                            <li>
+                                <a href="dashboard.html">
+                                <i class="fa fa-dashboard"></i>
+                                Escritorio </a>
+                            </li>
+                            <li>
+                                <a href="events.html">
+                                <i class="fa fa-calendar-o"></i>
+                                Eventos </a>
+                            </li>
+                            <li>
+                                <a href="reservations.html">
+                                <i class="fa fa-book"></i>
+                                Reservaciones </a>
+                            </li>
+                            <li class="active">
+                                <a href="tickets.html">
+                                <i class="fa fa-ticket"></i>
+                                Boletos </a>
+                            </li>
+                            <li>
+                                <a href="configuration.html">
+                                <i class="fa fa-cogs"></i>
+                                Configuracion </a>
+                            </li>
+                            <li>
+                                <a href="help.html">
+                                <i class="fa fa-info-circle"></i>
+                                Ayuda </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="profile-content">
+                    <h3>Agregar boletos</h3>
+                    <hr>
+	                    <form>
+	                    	<div class="col-xs-12 col-md-6">
+		                    	<div class="form-group">
+		                    		<label for="type">Evento</label>
+		                    		<div class="input-group">
+		                    			<span class="input-group-addon"><i class="fa fa-user-o"></i></span>
+		                    			<select id="type" name="type" class="form-control" placeholder="Nombre del evento">
+		                    				<option value="1">Festival Santa Lucia</option>
+		                    				<option value="2">Deportivo</option>
+		                    				<option value="3">Musical</option>
+		                    			</select>
+		                    		</div>
+		                    	</div>
+
+		                    	<div class="form-group">
+		                    		<label for="type">Zona</label>
+		                    		<div class="input-group">
+		                    			<span class="input-group-addon"><i class="fa fa-user-o"></i></span>
+		                    			<select id="type" name="type" class="form-control" placeholder="Nombre del evento">
+		                    				<option value="1">Prueba</option>
+		                    				<option value="2">Deportivo</option>
+		                    				<option value="3">Musical</option>
+		                    			</select>
+		                    		</div>
+		                    	</div>
+	                    	</div>
+							<div class="col-xs-12 col-md-6">
+		                    	<div class="form-group">
+		                    		<label for="place">Cantidad</label>
+		                    		<div class="input-group">
+		                    			<span class="input-group-addon"><i class="fa fa-ticket"></i></span>
+		                    			<input type="number" class="form-control">
+		                    		</div>
+		                    	</div>
+
+		                    	<div class="form-group">
+		                    		<label for="date">Precio</label>
+		                    		<div class="input-group">
+		                    			<span class="input-group-addon"><i class="fa fa-dollar"></i></span>
+		                    			<input type="number" class="form-control">
+		                    		</div>
+		                    	</div>
+
+		                    	<div class="form-group">
+		                    		<button class="btn btn-primary pull-right">Agregar</button>
+		                    	</div>
+	                    	</div>
+	                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="col-xs-12">
+        <p>EvenTicket&copy; 2017. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

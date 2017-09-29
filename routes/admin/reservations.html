@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvenTicket</title>
+
+    <!-- Bootstrap for the CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Flatly theme -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Left Sidebar -->
+    <link rel="stylesheet" href="../../css/profile.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html">EvenTicket</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="separator"></li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrador <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i> Escritorio</a></li>
+                <li><a href="help.html"><i class="fa fa-info-circle"></i> Ayuda</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row profile">
+            <div class="col-md-3">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                        <ul class="nav">
+                            <li>
+                                <a href="dashboard.html">
+                                <i class="fa fa-dashboard"></i>
+                                Escritorio </a>
+                            </li>
+                            <li>
+                                <a href="events.html">
+                                <i class="fa fa-calendar-o"></i>
+                                Eventos </a>
+                            </li>
+                            <li class="active">
+                                <a href="reservations.html">
+                                <i class="fa fa-book"></i>
+                                Reservaciones </a>
+                            </li>
+                            <li>
+                                <a href="tickets.html">
+                                <i class="fa fa-ticket"></i>
+                                Boletos </a>
+                            </li>
+                            <li>
+                                <a href="configuration.html">
+                                <i class="fa fa-cogs"></i>
+                                Configuracion </a>
+                            </li>
+                            <li>
+                                <a href="help.html">
+                                <i class="fa fa-info-circle"></i>
+                                Ayuda </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="profile-content">
+                    <h3>Reservaciones</h3>
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover text-center">
+                            <thead>
+                                <tr class="active">
+                                    <th>#</th>
+                                    <th>Usuario</th>
+                                    <th>Evento</th>
+                                    <th><i class="fa fa-calendar"></i></th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--Row 1 @foreach-->
+                                <tr>
+                                    <td>1</td>
+                                    <td>Prueba</td>
+                                    <td>Festival Santa Lucia</td>
+                                    <td>27/Septiembre/2017 12:00</td>
+                                    <td>
+                                        <span class="label label-info">Ver</span>
+                                        <span class="label label-warning">Editar</span>
+                                        <span class="label label-danger">Eliminar</span>
+                                    </td>
+                                </tr>
+                                <!--Row 2-->
+                                <tr>
+                                    <td>2</td>
+                                    <td>Prueba</td>
+                                    <td>Festival Santa Lucia</td>
+                                    <td>27/Septiembre/2017 12:00</td>
+                                    <td>
+                                        <span class="label label-info">Ver</span>
+                                        <span class="label label-warning">Editar</span>
+                                        <span class="label label-danger">Eliminar</span>
+                                    </td>
+                                </tr>
+                                <!--Row 3-->
+                                <tr>
+                                    <td>3</td>
+                                    <td>Prueba</td>
+                                    <td>Festival Santa Lucia</td>
+                                    <td>27/Septiembre/2017 12:00</td>
+                                    <td>
+                                        <span class="label label-info">Ver</span>
+                                        <span class="label label-warning">Editar</span>
+                                        <span class="label label-danger">Eliminar</span>
+                                    </td>
+                                </tr>
+                                <!--Row 4-->
+                                <tr>
+                                    <td>4</td>
+                                    <td>Prueba</td>
+                                    <td>Festival Santa Lucia</td>
+                                    <td>27/Septiembre/2017 12:00</td>
+                                    <td>
+                                        <span class="label label-info">Ver</span>
+                                        <span class="label label-warning">Editar</span>
+                                        <span class="label label-danger">Eliminar</span>
+                                    </td>
+                                </tr>
+                                <!--Row 5-->
+                                <tr>
+                                    <td>5</td>
+                                    <td>Prueba</td>
+                                    <td>Festival Santa Lucia</td>
+                                    <td>27/Septiembre/2017 12:00</td>
+                                    <td>
+                                        <span class="label label-info">Ver</span>
+                                        <span class="label label-warning">Editar</span>
+                                        <span class="label label-danger">Eliminar</span>
+                                    </td>
+                                </tr>
+                                <!--Row 6-->
+                                <tr>
+                                    <td>6</td>
+                                    <td>Prueba</td>
+                                    <td>Festival Santa Lucia</td>
+                                    <td>27/Septiembre/2017 12:00</td>
+                                    <td>
+                                        <span class="label label-info">Ver</span>
+                                        <span class="label label-warning">Editar</span>
+                                        <span class="label label-danger">Eliminar</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="col-xs-12">
+        <p>EvenTicket&copy; 2017. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

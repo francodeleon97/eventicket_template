@@ -50,3 +50,15 @@ footer p {
 .price {
 	margin-top: 20px;
 }
+
+.log-p {
+	font-size: 1.2em;
+}
+
+.log-date {
+	color: #3498db;
+}
+
+.table th{
+	text-align: center;
+}

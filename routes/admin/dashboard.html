@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvenTicket</title>
+
+    <!-- Bootstrap for the CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap Flatly theme -->
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- Left Sidebar -->
+    <link rel="stylesheet" href="../../css/profile.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="dashboard.html">EvenTicket</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="separator"></li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrador <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="dashboard.html"><i class="fa fa-dashboard"></i> Escritorio</a></li>
+                <li><a href="help.html"><i class="fa fa-info-circle"></i> Ayuda</a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row profile">
+            <div class="col-md-3">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="dashboard.html">
+                                <i class="fa fa-dashboard"></i>
+                                Escritorio </a>
+                            </li>
+                            <li>
+                                <a href="events.html">
+                                <i class="fa fa-calendar-o"></i>
+                                Eventos </a>
+                            </li>
+                            <li>
+                                <a href="reservations.html">
+                                <i class="fa fa-book"></i>
+                                Reservaciones </a>
+                            </li>
+                            <li>
+                                <a href="tickets.html">
+                                <i class="fa fa-ticket"></i>
+                                Boletos </a>
+                            </li>
+                            <li>
+                                <a href="configuration.html">
+                                <i class="fa fa-cogs"></i>
+                                Configuracion </a>
+                            </li>
+                            <li>
+                                <a href="help.html">
+                                <i class="fa fa-info-circle"></i>
+                                Ayuda </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="profile-content">
+                    <h3>Escritorio</h3>
+                    <hr>
+                    <div class="row">
+                    	<div class="col-xs-12 col-md-3">
+                    		<div class="panel panel-info">
+							  <div class="panel-heading">
+							    <h3 class="panel-title"><a href="events.html"><i class="fa fa-calendar-o"></i> Eventos</a></h3>
+							  </div>
+							</div>
+                    	</div>
+                    	<div class="col-xs-12 col-md-3">
+                    		<div class="panel panel-success">
+							  <div class="panel-heading">
+							    <h3 class="panel-title"><a href="reservations.html"><i class="fa fa-book"></i> Reservaciones</a></h3>
+							  </div>
+							</div>
+                    	</div>
+                    	<div class="col-xs-12 col-md-3">
+                    		<div class="panel panel-danger">
+							  <div class="panel-heading">
+							    <h3 class="panel-title"><a href="tickets.html"><i class="fa fa-ticket"></i> Boletos</a></h3>
+							  </div>
+							</div>
+                    	</div>
+                    	<div class="col-xs-12 col-md-3">
+                    		<div class="panel panel-primary">
+							  <div class="panel-heading">
+							    <h3 class="panel-title"><a href="configuration.html"><i class="fa fa-cogs"></i> Configuración</a></h3>
+							  </div>
+							</div>
+                    	</div>
+                    </div>
+                    <h4>Ultimas actividades</h4>
+                    <ul class="list-group">
+                    	<!-- Log 1 @foreach-->
+                    	<li class="list-group-item">
+                    		<p class="log-p">
+                    			<i class="fa fa-book"></i><strong> Usuario de prueba</strong> realizó una reservacion al evento <strong>Tigres vs Necaxa</strong>
+                    			<br />
+                    			<span class="log-date">
+                    				<i class="fa fa-calendar"></i> 25/Septiembre/2017 
+                    				<i class="fa fa-clock-o"></i> 19:37
+                    			</span>
+                    		</p>
+                    	</li>
+
+                    	<li class="list-group-item">
+                    		<p class="log-p">
+                    			<i class="fa fa-book"></i><strong> Usuario de prueba2</strong> realizó una reservacion al evento <strong>Tigres vs Necaxa</strong>
+                    			<br />
+                    			<span class="log-date">
+                    				<i class="fa fa-calendar"></i> 25/Septiembre/2017 
+                    				<i class="fa fa-clock-o"></i> 19:03
+                    			</span>
+                    		</p>
+                    	</li>
+
+                    	<li class="list-group-item">
+                    		<p class="log-p">
+                    			<i class="fa fa-calendar-o"></i><strong> Usuario administrador</strong> agrego el evento <strong>Northside Festival</strong>
+                    			<br />
+                    			<span class="log-date">
+                    				<i class="fa fa-calendar"></i> 20/Septiembre/2017 
+                    				<i class="fa fa-clock-o"></i> 13:00
+                    			</span>
+                    		</p>
+                    	</li>
+
+                    	<li class="list-group-item">
+                    		<p class="log-p">
+                    			<i class="fa fa-cogs"></i><strong> Usuario administrador</strong> agrego el usuario <strong>Usuario de prueba</strong>
+                    			<br />
+                    			<span class="log-date">
+                    				<i class="fa fa-calendar"></i> 20/Septiembre/2017 
+                    				<i class="fa fa-clock-o"></i> 12:43
+                    			</span>
+                    		</p>
+                    	</li>
+
+                    	<li class="list-group-item">
+                    		<p class="log-p">
+                    			<i class="fa fa-ticket"></i><strong> Usuario administrador</strong> agrego <strong>50</strong> boletos al evento <strong>Tigres vs Necaxa</strong>  en la zona <strong>Preferente Sur</strong>
+                    			<br />
+                    			<span class="log-date">
+	                    			<i class="fa fa-calendar"></i> 19/Septiembre/2017 
+	                    			<i class="fa fa-clock-o"></i> 14:55
+                    			</span>
+                    		</p>
+                    	</li>
+
+                    	<li class="list-group-item">
+                    		<p class="log-p">
+                    			<i class="fa fa-calendar-o"></i><strong> Usuario administrador</strong> agrego el evento <strong>Tigres vs Necaxa</strong>
+                    			<br />
+                    			<span class="log-date">
+                    				<i class="fa fa-calendar"></i> 19/Septiembre/2017 
+                    				<i class="fa fa-clock-o"></i> 14:52
+                    			</span>
+                    		</p>
+                    	</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="col-xs-12">
+        <p>EvenTicket&copy; 2017. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
